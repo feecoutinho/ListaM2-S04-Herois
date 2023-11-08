@@ -62,10 +62,9 @@ public class Display {
     }
 
     public void listar(List<Personagem> personagens) {
-        Collections.sort(personagens); // pode ser assim tbm: personagens.stream().sorted();
+        Collections.sort(personagens);
         System.out.println("Listando...");
         personagens.forEach(p -> System.out.println(p));
-//        personagens.forEach(System.out::println);  // mesma coisa
         System.out.println();
     }
 }
